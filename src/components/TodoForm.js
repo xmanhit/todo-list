@@ -13,11 +13,7 @@ class TodoForm extends Component {
   onSubmit(event) {
     event.preventDefault();
     var newItemValue = this.inputName.current.value;
-<<<<<<< HEAD
-=======
     console.log(newItemValue);
-    
->>>>>>> 78691031f3980f03ede6187fec988a073ee9f5af
     if(newItemValue) {
       this.props.addItem({newItemValue});
       this.form.reset();
