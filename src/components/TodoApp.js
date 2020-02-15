@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import TodoHeader from './TodoHeader';
 import TodoList from './TodoList';
 import TodoForm from './TodoForm';
+import TodoFooter from './TodoFooter';
 
 class TodoApp extends Component {
   constructor (props) {
@@ -36,6 +37,7 @@ class TodoApp extends Component {
         <TodoHeader />
         <TodoList items={this.props.initItems} removeItem={this.removeItem} markTodoDone={this.markTodoDone}/>
         <TodoForm addItem={this.addItem} />
+        <TodoFooter />
       </div>
     );
   }
