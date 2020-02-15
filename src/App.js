@@ -21,6 +21,7 @@ todoItems.push({index: 3, value: "Mua hoa", done: true});
 
 class App extends Component {
   render() {
+    console.log(Component.version);
     return (
       <TodoApp initItems={todoItems}/>
     );

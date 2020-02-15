@@ -13,7 +13,6 @@ class TodoForm extends Component {
   onSubmit(event) {
     event.preventDefault();
     var newItemValue = this.inputName.current.value;
-    
     if(newItemValue) {
       this.props.addItem({newItemValue});
       this.form.reset();
@@ -25,7 +24,7 @@ class TodoForm extends Component {
         <input type="text" ref={this.inputName} className="form-control" placeholder="add a new todo..."/>
         <button type="submit" className="btn btn-default">Add</button> 
       </form>
-    );   
+    );
   }
 }
 
