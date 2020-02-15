@@ -14,7 +14,7 @@ class TodoApp extends Component {
   addItem(todoItem) {
     this.props.initItems.unshift({
       index: this.props.initItems.length+1,
-      value: this.props.initItems.newItemValue,
+      value: todoItem.newItemValue,
       done: false
     });
     this.setState({todoItems: this.props.initItems});
